@@ -4,8 +4,8 @@ const userSchema = new mongoose.Schema({
   name:{type : String,requied:true},
   email:{type : String,requied:true,unique:true},
   imageUrl:{type : String,requied:true},
-  cartItems:{type:Object,default:{}}
+  cartItems:{type:Object,default:{}},
 
-},{minimize:false})
+},{minimize:false});
 const User = mongoose.models.user || mongoose.model('user',userSchema);
 export default User;

@@ -48,7 +48,7 @@ export const syncUserUpdation = inngest.createFunction(
   await connectDB();
   await User.findByIdAndUpdate(id,userData);
   }
-)
+);
 // Inngest function to delete user from the database
 export const syncUserDeletion = inngest.createFunction(
   {
